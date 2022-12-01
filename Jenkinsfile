@@ -4,7 +4,7 @@ pipeline
     agent any
     stages
     {
-        stage('Continuous Download')
+        stage('Continuous Download Master')
         {
             steps
             {
@@ -14,7 +14,7 @@ pipeline
                 }
             }
         }
-        stage('Continuous Build')
+        stage('Continuous Build Master')
         {
             steps
             {
@@ -24,7 +24,7 @@ pipeline
                 }
             }
         }
-        stage('Continuous Deploy')
+        stage('Continuous Deploy Master')
         {
             steps
             {
