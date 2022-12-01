@@ -30,7 +30,7 @@ pipeline
             {
                 script
                 {
-                    cicd.newDeploy("${env.JOB_NAME}","172.31.1.102","test")
+                    cicd.newDeploy("${env.WORKSPACE}","172.31.1.102","test")
                 }
             }
         }
